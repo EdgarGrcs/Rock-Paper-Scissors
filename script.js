@@ -1,3 +1,6 @@
+/*Needs to be operated through a console in a web browser */
+
+
 /**
  * 
  * @returns random number between 1 and 3
@@ -23,10 +26,6 @@ function computerPlay() {
 
     return scissors;
 }
-
-
-
-
 
 function playRound(playerSelection, computerSelection) {
 
@@ -65,18 +64,15 @@ function playRound(playerSelection, computerSelection) {
     return tieGame;
 }
 
-
-
+let playerScore = 0;
+let computerScore = 0;
 
 function game() {
 
     const computerSelection = computerPlay();
     let playerSelection = window.prompt("choose between rock, paper, scissors: ");
-
-
     let matchScore = playRound(playerSelection, computerSelection);
-    let playerScore = 0;
-    let computerScore = 0;
+
 
     let youWin = "You win!";
     let youLose = "You lose!";
@@ -86,21 +82,19 @@ function game() {
         playerScore++;
         console.log("Your score is: " + playerScore);
         console.log("Computer's score is: " + computerScore);
-        return;
+
     }
     if (matchScore == youLose) {
         computerScore++;
         console.log("Computer's score is: " + computerScore);
         console.log("Your score is: " + playerScore);
-        return;
+
     }
 
     if (matchScore == tieGame) {
         console.log("Computer's score is: " + computerScore);
         console.log("Your score is: " + playerScore);
-        return;
     }
-
 
     if (playerScore == 5) {
         console.log("Player Wins");
