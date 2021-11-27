@@ -1,6 +1,5 @@
 /*Needs to be operated through a console in a web browser */
 
-
 /**
  * 
  * @returns random number between 1 and 3
@@ -11,19 +10,15 @@ function computerPlay() {
     let rock = "rock";
     let paper = "paper";
     let scissors = "scissors";
-
     let number = Math.floor(Math.random() * 3)
 
     if (number == 0) {
-
         return rock;
     }
 
     if (number == 1) {
-
         return paper;
     }
-
     return scissors;
 }
 
@@ -73,7 +68,6 @@ function game() {
     let playerSelection = window.prompt("choose between rock, paper, scissors: ");
     let matchScore = playRound(playerSelection, computerSelection);
 
-
     let youWin = "You win!";
     let youLose = "You lose!";
     let tieGame = "It's a tie!";
@@ -82,29 +76,23 @@ function game() {
         playerScore++;
         console.log("Your score is: " + playerScore);
         console.log("Computer's score is: " + computerScore);
-
     }
     if (matchScore == youLose) {
         computerScore++;
         console.log("Computer's score is: " + computerScore);
         console.log("Your score is: " + playerScore);
-
     }
-
     if (matchScore == tieGame) {
         console.log("Computer's score is: " + computerScore);
         console.log("Your score is: " + playerScore);
     }
-
     if (playerScore == 5) {
         console.log("Player Wins");
         return;
     }
-
     if (computerScore == 5) {
         console.log("ComputerWins");
         return;
     }
-
     return game();
 }
