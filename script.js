@@ -74,24 +74,24 @@ function game() {
 
     if (matchScore == youWin) {
         playerScore++;
-        console.log("Your score is: " + playerScore);
-        console.log("Computer's score is: " + computerScore);
+        console.log("You: " + playerScore);
+        console.log("Computer: " + computerScore);
     }
     if (matchScore == youLose) {
         computerScore++;
-        console.log("Computer's score is: " + computerScore);
-        console.log("Your score is: " + playerScore);
+        console.log("You: " + playerScore);
+        console.log("Computer: " + computerScore);
     }
     if (matchScore == tieGame) {
-        console.log("Computer's score is: " + computerScore);
-        console.log("Your score is: " + playerScore);
+        console.log("You: " + playerScore);
+        console.log("Computer: " + computerScore);
     }
     if (playerScore == 5) {
-        console.log("Player Wins");
+        console.log("You Win!");
         return;
     }
     if (computerScore == 5) {
-        console.log("ComputerWins");
+        console.log("Computer Wins");
         return;
     }
     return game();
