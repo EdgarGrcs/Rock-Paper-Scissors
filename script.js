@@ -61,38 +61,3 @@ function playRound(playerSelection, computerSelection) {
 
 let playerScore = 0;
 let computerScore = 0;
-
-function game() {
-
-    const computerSelection = computerPlay();
-    let playerSelection = window.prompt("choose between rock, paper, scissors: ");
-    let matchScore = playRound(playerSelection, computerSelection);
-
-    let youWin = "You win!";
-    let youLose = "You lose!";
-    let tieGame = "It's a tie!";
-
-    if (matchScore == youWin) {
-        playerScore++;
-        console.log("You: " + playerScore);
-        console.log("Computer: " + computerScore);
-    }
-    if (matchScore == youLose) {
-        computerScore++;
-        console.log("You: " + playerScore);
-        console.log("Computer: " + computerScore);
-    }
-    if (matchScore == tieGame) {
-        console.log("You: " + playerScore);
-        console.log("Computer: " + computerScore);
-    }
-    if (playerScore == 5) {
-        console.log("You Win!");
-        return;
-    }
-    if (computerScore == 5) {
-        console.log("Computer Wins");
-        return;
-    }
-    return game();
-}

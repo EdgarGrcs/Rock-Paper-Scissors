@@ -1,0 +1,62 @@
+.container {
+    margin: -10px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    padding: 50px;
+    background: rgb(72, 72, 187);
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'arial';
+    color: white;
+}
+
+.main-box {
+    border: 2px solid red;
+    padding: 450px;
+}
+
+.rps-box {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.rpsimage {
+    height: auto;
+    width: 150px;
+}
+
+.box1 {
+    border: 2px solid red;
+}
+
+.box2 {
+    border: 2px solid red;
+}
+
+.box3 {
+    border: 2px solid red;
+}
+
+.footer {
+    display: flex;
+    border: 2px solid red;
+    padding: 50px;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    color: grey;
+    gap: 10px;
+}
+
+.git-icon {
+    height: auto;
+    width: 25px;
+}
