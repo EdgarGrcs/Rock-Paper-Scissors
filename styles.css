@@ -3,12 +3,15 @@
     border: 2px solid red;
     display: flex;
     flex-direction: column;
+    font-family: 'arial';
+    font-weight: bold;
+    color: white;
 }
 
 .header {
     display: flex;
     padding: 50px;
-    background: rgb(72, 72, 187);
+    background-color: grey;
     justify-content: center;
     text-align: center;
     font-size: 40px;
@@ -18,17 +21,25 @@
 
 .main-box {
     border: 2px solid red;
-    padding: 450px;
+    padding: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
 }
 
 .rps-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     border: 2px solid red;
     display: flex;
-    justify-content: space-between;
     padding: 50px;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
 }
 
-.rpsimage {
+img {
     height: auto;
     width: 150px;
 }
@@ -37,23 +48,75 @@
     border: 2px solid red;
 }
 
-.box2 {
+.scorebox {
     border: 2px solid red;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-.box3 {
+#winner {
     border: 2px solid red;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.innerBox {
+    display: block;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.playerText {
+    border: 2px solid red;
+    margin: 10px;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#scorePlayer {
+    border: 2px solid red;
+    padding: 50px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+}
+
+#scoreComputer {
+    border: 2px solid red;
+    padding: 50px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
 }
 
 .footer {
     display: flex;
     border: 2px solid red;
-    padding: 50px;
+    padding: 10px;
     font-size: 15px;
     text-align: center;
     justify-content: center;
-    color: grey;
+    color: black;
     gap: 10px;
+    background-color: grey;
 }
 
 .git-icon {

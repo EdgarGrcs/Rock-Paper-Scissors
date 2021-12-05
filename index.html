@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -22,20 +22,41 @@
         <div class="main-box">
             <div class="rps-box">
                 <div class="box1">
-                    <img class="rpsimage" src="" alt=""> Rock
+                    <button id="rock"><img src="Images/rock.png" alt="rock" ></button>
+
 
                 </div>
-                <div class="box2">
-                    <img class="rpsimage" src="" alt=""> Paper
+                <div class="box1">
+                    <button id="paper"><img src="Images/paper.png" alt="paper" ></button>
+
                 </div>
-                <div class="box3">
-                    <img class="rpsimage" src="" alt=""> Scissors
+                <div class="box1">
+                    <button id="scissors"><img src="Images/scissors.png" alt="scissors" ></button>
+
                 </div>
+            </div>
+
+            <div class="scorebox">
+
+
+                <div id="winner"></div>
+                <div class="innerBox">
+                    <div class="playerText"> You:</div>
+                    <div id="scorePlayer"></div>
+                </div>
+                <div class="innerBox">
+                    <div class="playerText"> Computer:</div>
+                    <div id="scoreComputer"></div>
+                </div>
+
+
+
             </div>
 
         </div>
         <div class="footer">
-            Copyright <img class="git-icon" src="./images/githubicon.png" alt="github icon"> EdgarGrcs
+            Copyright
+            <a href="https://github.com/EdgarGrcs"><img class="git-icon" src="./images/githubicon.png" alt="github icon"> </a> EdgarGrcs
         </div>
 
     </div>
