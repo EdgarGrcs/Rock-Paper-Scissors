@@ -113,22 +113,28 @@ function game(match) {
         scorecomputer.appendChild(computerScoreCount)
     }
     if (playerScore == 5) {
-        playerScore = 0
-        computerScore = 0
+        playerScore = 5
+
         playerScoreCount.textContent = playerScore
         computerScoreCount.textContent = computerScore
         winnerText.textContent = "You Win!"
         winner.appendChild(winnerText)
+        playerScore = 0
+        computerScore = 0
+
         return;
     }
     if (computerScore == 5) {
-        playerScore = 0
-        computerScore = 0
+
+        computerScore = 5
         playerScoreCount.textContent = playerScore
         computerScoreCount.textContent = computerScore
 
         winnerText.textContent = "Computer Wins!"
         winner.appendChild(winnerText)
+        playerScore = 0
+        computerScore = 0
+
         return;
     }
 
