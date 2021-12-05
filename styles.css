@@ -1,6 +1,5 @@
 .container {
     margin: -10px;
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     font-family: 'arial';
@@ -20,7 +19,6 @@
 }
 
 .main-box {
-    border: 2px solid red;
     padding: 200px;
     justify-content: center;
     align-items: center;
@@ -31,7 +29,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    border: 2px solid red;
     display: flex;
     padding: 50px;
     gap: 16px;
@@ -44,12 +41,9 @@ img {
     width: 150px;
 }
 
-.box1 {
-    border: 2px solid red;
-}
+.box1 {}
 
 .scorebox {
-    border: 2px solid red;
     padding: 50px;
     justify-content: center;
     align-items: center;
@@ -60,7 +54,6 @@ img {
 }
 
 #winner {
-    border: 2px solid red;
     padding: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -72,7 +65,6 @@ img {
 
 .innerBox {
     display: block;
-    border: 2px solid red;
     justify-content: center;
     align-items: center;
     margin-left: auto;
@@ -81,7 +73,6 @@ img {
 }
 
 .playerText {
-    border: 2px solid red;
     margin: 10px;
     font-size: 24px;
     margin-left: auto;
@@ -90,7 +81,6 @@ img {
 }
 
 #scorePlayer {
-    border: 2px solid red;
     padding: 50px;
     margin: 20px;
     margin-left: auto;
@@ -99,7 +89,6 @@ img {
 }
 
 #scoreComputer {
-    border: 2px solid red;
     padding: 50px;
     margin: 20px;
     margin-left: auto;
@@ -109,7 +98,6 @@ img {
 
 .footer {
     display: flex;
-    border: 2px solid red;
     padding: 10px;
     font-size: 15px;
     text-align: center;

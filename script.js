@@ -120,8 +120,8 @@ function game(match) {
         scorecomputer.appendChild(computerScoreCount)
     }
     if (playerScore == 5) {
-        let playerScore = 0
-        let computerScore = 0
+        playerScore = 0
+        computerScore = 0
         playerScoreCount.textContent = playerScore
         computerScoreCount.textContent = computerScore
         winnerText.textContent = "You Win!"
@@ -129,8 +129,8 @@ function game(match) {
         return;
     }
     if (computerScore == 5) {
-        let playerScore = 0
-        let computerScore = 0
+        playerScore = 0
+        computerScore = 0
         playerScoreCount.textContent = playerScore
         computerScoreCount.textContent = computerScore
 
@@ -138,5 +138,7 @@ function game(match) {
         winner.appendChild(winnerText)
         return;
     }
+
+
 
 }
