@@ -73,14 +73,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 
-//const scorePlayer = document.querySelector("scorePlayer")
-//const playerScoreCount = document.createElement("p")
-//const scoreComputer = document.querySelector("scoreComputer")
-//const computerScoreCount = document.createElement("p")
 
-
-//const winner = document.querySelector("#winner")
-//const winnerText = document.createElement("p")
 
 let playerScore = 0
 let computerScore = 0
