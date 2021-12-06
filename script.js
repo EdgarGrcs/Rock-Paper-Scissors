@@ -32,7 +32,6 @@ function computerPlay() {
     if (number == 0) {
         return rock;
     }
-
     if (number == 1) {
         return paper;
     }
@@ -50,8 +49,6 @@ function playRound(playerSelection, computerSelection) {
     let youWin = "You win!";
     let youLose = "You lose!";
     let tieGame = "It's a tie!";
-
-
 
     if (playerSelection == rockBtn && computerSelection == "rock") {
         playerOutput.textContent = "Rock"
@@ -109,7 +106,6 @@ function playRound(playerSelection, computerSelection) {
         computerInput.appendChild(computerOutput)
         return game(youWin);
     }
-
     playerOutput.textContent = "Scissors"
     playInput.appendChild(playerOutput)
     computerOutput.textContent = "Scissors"
@@ -137,54 +133,42 @@ function game(match) {
         playerScore++;
         playerScoreCount.textContent = playerScore
         scorePlayer.appendChild(playerScoreCount)
-
         computerScoreCount.textContent = computerScore
         scoreComputer.appendChild(computerScoreCount)
-
     }
     if (matchScore == youLose) {
         computerScore++;
         playerScoreCount.textContent = playerScore
         scorePlayer.appendChild(playerScoreCount)
-
         computerScoreCount.textContent = computerScore
         scoreComputer.appendChild(computerScoreCount)
     }
     if (matchScore == tieGame) {
         playerScoreCount.textContent = playerScore
         scorePlayer.appendChild(playerScoreCount)
-
         computerScoreCount.textContent = computerScore
         scoreComputer.appendChild(computerScoreCount)
     }
     if (playerScore == 5) {
         playerScore = 5
-
         playerScoreCount.textContent = playerScore
         computerScoreCount.textContent = computerScore
         winnerText.textContent = "You Win!"
         winner.appendChild(winnerText)
         playerScore = 0
         computerScore = 0
-
         return;
     }
     if (computerScore == 5) {
-
         computerScore = 5
         playerScoreCount.textContent = playerScore
         computerScoreCount.textContent = computerScore
-
         winnerText.textContent = "Computer Wins!"
         winner.appendChild(winnerText)
         playerScore = 0
         computerScore = 0
-
         return;
     }
-
     winnerText.textContent = "Who will win?"
     winner.appendChild(winnerText)
-
-
 }
