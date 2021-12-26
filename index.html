@@ -12,46 +12,57 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            Rock Paper Scissors!
+<div class="container">
+    <div class="header">
+        Rock Paper Scissors!
+    </div>
+    <div class="main-box">
+
+        <div class="rps-box">
+            <div class="box1">
+                <button id="rock" title="rock">
+                    <div class="buttons">Rock</div>
+                </button>
+            </div>
+            <div class="box1">
+                <button id="paper" title="paper">
+                    <div class="buttons">Paper</div>
+                </button>
+            </div>
+            <div class="box1">
+                <button id="scissors" title="scissors">
+                    <div class="buttons">Scissors</div>
+                </button>
+            </div>
         </div>
-        <div class="main-box">
-            <div class="rps-box">
-                <div class="box1">
-                    <button id="rock"><img src="Images/rock.png" alt="rock" ></button>
+
+        <div class="scorebox">
+
+            <div id="winner"></div>
+
+            <div class="innerBox">
+                <div class="inputBox">
+                    <div class="playerText"> You:</div>
+                    <div id="playerInput"></div>
                 </div>
-                <div class="box1">
-                    <button id="paper"><img src="Images/paper.png" alt="paper" ></button>
+                <div id="scorePlayer"></div>
+            </div>
+            <div class="innerBox">
+                <div class="inputBox">
+                    <div class="playerText"> Computer:</div>
+                    <div id="computerInput"></div>
                 </div>
-                <div class="box1">
-                    <button id="scissors"><img src="Images/scissors.png" alt="scissors" ></button>
-                </div>
+                <div id="scoreComputer"></div>
             </div>
 
-            <div class="scorebox">
-                <div id="winner"></div>
-                <div class="innerBox">
-                    <div class="inputBox">
-                        <div class="playerText"> You:</div>
-                        <div id="playerInput"></div>
-                    </div>
-                    <div id="scorePlayer"></div>
-                </div>
-                <div class="innerBox">
-                    <div class="inputBox">
-                        <div class="playerText"> Computer:</div>
-                        <div id="computerInput"></div>
-                    </div>
-                    <div id="scoreComputer"></div>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            Copyright
-            <a href="https://github.com/EdgarGrcs"><img class="git-icon" src="./Images/githubicon.png" alt="github icon"> </a> EdgarGrcs
         </div>
     </div>
+    <div class="footer">
+        Copyright
+        <a href="https://github.com/EdgarGrcs"><img class="git-icon" src="./Images/githubicon.png" alt="github icon">
+        </a> EdgarGrcs
+    </div>
+</div>
 </body>
 
 </html>
